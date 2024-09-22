@@ -73,4 +73,5 @@ such as:
     404 Not Found: When a category or product is not found.
     400 Bad Request: When the input data is invalid.
 
-    
+    ![Nimap test](https://github.com/user-attachments/assets/fce75e88-fa31-4272-b4cb-77324e486c7f)
+

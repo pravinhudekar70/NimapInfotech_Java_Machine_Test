@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.entity.Product;
 import com.demo.exception.ResourceNotFoundException;
-import com.demo.service.ProductService;
+import com.demo.service.ProductServiceImpl;
 
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
     @Autowired
-    private ProductService productService;
+    private ProductServiceImpl productService;
 
     @GetMapping
     public Page<Product> getAllProducts(@RequestParam(defaultValue = "0") int page) {

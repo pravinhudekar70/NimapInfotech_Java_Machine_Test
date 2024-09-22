@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.demo.entity.Category;
 import com.demo.exception.ResourceNotFoundException;
-import com.demo.service.CategoryService;
+import com.demo.service.CategoryServiceImpl;
 
 @RestController
 @RequestMapping("/api/categories")
 public class CategoryController {
     @Autowired
-    private CategoryService categoryService;
+    private CategoryServiceImpl categoryService;
 
     @GetMapping
     public Page<Category> getAllCategories(@RequestParam(defaultValue = "0") int page) {

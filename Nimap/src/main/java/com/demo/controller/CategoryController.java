@@ -25,7 +25,7 @@ public class CategoryController {
 
     @GetMapping
     public Page<Category> getAllCategories(@RequestParam(defaultValue = "0") int page) {
-        return categoryService.getAllCategories(PageRequest.of(page, 3));
+        return categoryService.getAllCategories(PageRequest.of(page, 5));
     }
 
     @PostMapping

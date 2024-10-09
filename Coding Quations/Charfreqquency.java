@@ -4,30 +4,30 @@ public class Charfreqquency {
     public static void main(String[] args) {
         String str = "hellow dear my name is pravin";
         Map<Character, Integer> map = new HashMap<>();
-        // Way1 using map
-        char chArr[] = str.toCharArray();
-        for (char ch : chArr) {
-            if (!map.containsKey(ch)) {
-                map.put(ch, 1);
-            } else {
-                map.put(ch, map.get(ch) + 1);
-            }
-        }
-        System.out.println(map);
+        // // Way1 using map
+        // char chArr[] = str.toCharArray();
+        // for (char ch : chArr) {
+        // if (!map.containsKey(ch)) {
+        // map.put(ch, 1);
+        // } else {
+        // map.put(ch, map.get(ch) + 1);
+        // }
+        // }
+        // System.out.println(map);
 
-        // Way2 using map
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) != ' ') {
-                if (!map.containsKey(str.charAt(i))) {
-                    map.put(str.charAt(i), 1);
-                } else {
-                    map.put(str.charAt(i), map.get(str.charAt(i)) + 1);
-                }
-            }
-        }
-        for (char s : map.keySet()) {
-            System.out.println(s + "=> " + map.get(s));
-        }
+        // // Way2 using map
+        // for (int i = 0; i < str.length(); i++) {
+        // if (str.charAt(i) != ' ') {
+        // if (!map.containsKey(str.charAt(i))) {
+        // map.put(str.charAt(i), 1);
+        // } else {
+        // map.put(str.charAt(i), map.get(str.charAt(i)) + 1);
+        // }
+        // }
+        // }
+        // for (char s : map.keySet()) {
+        // System.out.println(s + "=> " + map.get(s));
+        // }
 
         // way 2 using Arrays
         int freq[] = new int[str.length()];

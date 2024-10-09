@@ -2,7 +2,9 @@ import java.util.*;
 
 public class Charfreqquency {
     public static void main(String[] args) {
-        String str = "hellow dear my name is pravin";
+        // String str = "hellow dear my name is pravin";
+        String str = "Engineering";
+        str = str.toLowerCase();
         Map<Character, Integer> map = new HashMap<>();
         // // Way1 using map
         // char chArr[] = str.toCharArray();
@@ -41,6 +43,7 @@ public class Charfreqquency {
                 }
             }
         }
+        System.out.println(String.valueOf(ch));
         for (int i = 0; i < ch.length; i++) {
             if (ch[i] != ' ' && ch[i] != '0') {
                 System.out.println(ch[i] + "=>" + freq[i]);

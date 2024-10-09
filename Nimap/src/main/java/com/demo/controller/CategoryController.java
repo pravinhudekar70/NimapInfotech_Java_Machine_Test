@@ -24,7 +24,7 @@ public class CategoryController {
     private CategoryServiceImpl categoryService;
 
     @GetMapping
-    public Page<Category> getAllCategories(@RequestParam(defaultValue = "0") int page) {
+    public Page<Category> getAllCategories(@RequestParam int page) {
         return categoryService.getAllCategories(PageRequest.of(page, 5));
     }
 

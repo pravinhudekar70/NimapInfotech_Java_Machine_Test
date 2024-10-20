@@ -10,13 +10,13 @@ public class MissingNumber {
         // }
         // System.out.println(total - sum);
 
-        int a[] = new int[arr.length + 1];
+        int a[] = new int[arr.length + 2];
         for (int i = 0; i < arr.length; i++) {
-            a[arr[i] - 1] = 1;
+            a[arr[i]] = 1;
         }
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 1; i < a.length; i++) {
             if (a[i] == 0) {
-                System.out.print(i + 1);
+                System.out.print(i);
             }
         }
 
